@@ -2,6 +2,35 @@
 <html lang="zxx">
 
 <head>
+
+	<!-- Messenger Chat Plugin Code -->
+	<div id="fb-root"></div>
+
+	<!-- Your Chat Plugin code -->
+	<div id="fb-customer-chat" class="fb-customerchat">
+	</div>
+
+	<script>
+		var chatbox = document.getElementById('fb-customer-chat');
+		chatbox.setAttribute("page_id", "107712601475041");
+		chatbox.setAttribute("attribution", "biz_inbox");
+		window.fbAsyncInit = function () {
+			FB.init({
+				xfbml: true,
+				version: 'v11.0'
+			});
+		};
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+
+
 	<link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon">
 	<title>Techznicindia </title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -350,7 +379,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 services-right-w3ls">
-					<h5>APP WEBSITE-₹2500</h5>
+					<h5>APP WEBSITE-₹3000</h5>
 					<p> App Promotional site <br>
 						Free Domain <br>
 						Free Hosting <br>
@@ -604,7 +633,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 services-right-w3ls">
-					<h5>APP WEBSITE-35$</h5>
+					<h5>APP WEBSITE-41$</h5>
 					<p> App Promotional site <br>
 						Free Domain <br>
 						Free Hosting <br>
@@ -723,7 +752,7 @@
 					</div>
 				</div>
 				<div class="col-md-6 services-right-w3ls">
-					<h5>MARKETING-82.34$/month</h5>
+					<h5>MARKETING-136$</h5>
 					<p> 3 month Package include, <br>
 						Social Media Marketing<br>
 						Social Media Management<br>
@@ -875,7 +904,7 @@
 						</div>
 						<div class="col-md-6 blog-bottom bb1">
 							<div class="post-info">
-								<ul>
+								<!--<ul>
 									<li class="blog-icon-left">By
 										<a href="#">Admin</a>
 									</li>
@@ -884,13 +913,14 @@
 											<span class="fa fa-heart" aria-hidden="true"></span>
 										</a>94
 									</li>
-								</ul>
+									</ul> -->
 								<div class="clearfix"></div>
 								<a href="#" data-toggle="modal" data-target="#myModal">
-									<h5>20 feb:</h5>
+
 									<h4>How much time will the project take?</h4>
 								</a>
-								<p>The length of a website project will vary from project to project and the scope of
+								<p>The length of a website project will vary from project to project and the scope
+									of
 									the work required...
 								</p>
 							</div>
@@ -906,7 +936,7 @@
 
 						<div class="blog-bottom bb2">
 							<div class="post-info">
-								<ul>
+								<!--<ul>
 									<li class="blog-icon-left">By
 										<a href="#">Admin</a>
 									</li>
@@ -915,17 +945,21 @@
 											<span class="fa fa-heart" aria-hidden="true"></span>
 										</a>67
 									</li>
-								</ul>
+									</ul> -->
 								<div class="clearfix"></div>
 								<a href="#" data-toggle="modal" data-target="#myModal">
-									<h5>25 jan:</h5>
+
 									<h4>Which (Digital) Marketing Strategy is MOST Effective?</h4>
 								</a>
-								<p>Whether you are a new business or revamping your digital marketing strategy, it can
-									leave you with the difficult task of deciding where to focus your efforts, and more
+								<p>Whether you are a new business or revamping your digital marketing strategy, it
+									can
+									leave you with the difficult task of deciding where to focus your efforts, and
+									more
 									importantly, your budget. Is there a “perfect”, a one-size-fits-all marketing
-									strategy that will be ideal for everyone? The answer, as you could probably imagine,
-									is no. Rather, an integrated approach that uses a variety of strategies at various
+									strategy that will be ideal for everyone? The answer, as you could probably
+									imagine,
+									is no. Rather, an integrated approach that uses a variety of strategies at
+									various
 									points in the buying cycle is the best decision you can make.….
 								</p>
 							</div>
@@ -945,22 +979,29 @@
 
 						<div class="blog-bottom bb3">
 							<div class="post-info">
-								<ul>
+								<!--<ul>
 									<li class="blog-icon-left">By
-										<a href="#">Admin</a>
-									</li>
-									<li class="blog-icon-right">
-										<a href="#">
-											<span class="fa fa-heart" aria-hidden="true"></span>
-										</a>98
-									</li>
-								</ul>
+										<a href="#">Admin</a> 
+								</li>
+								<li class="blog-icon-right">
+									<a href="#">
+										<span class="fa fa-heart" aria-hidden="true"></span>
+									</a>98
+								</li>
+								</ul>-->
 								<div class="clearfix"></div>
 								<a href="#" data-toggle="modal" data-target="#myModal">
-									<h5>25 jan:</h5>
-									<h4>How Will You Accept International Payments?</h4>
+
+									<h4>What Types of Technologies will be Utilised?</h4>
 								</a>
-								<p>We Accept Paypal Payments For International Customers..
+								<p>Naturally, when creating custom software, we will use a variety of technologies.
+									The
+									most important factors to consider when opting for certain types of technologies
+									are
+									the types of code used to program the software, the maintenance that will be
+									required to keep the program up-to-date, and the future development of the
+									custom
+									software.
 								</p>
 							</div>
 
@@ -983,7 +1024,7 @@
 						</div>
 						<div class="col-md-6 blog-bottom bb4">
 							<div class="post-info">
-								<ul>
+								<!--<ul>
 									<li class="blog-icon-left">By
 										<a href="#">Admin</a>
 									</li>
@@ -992,10 +1033,10 @@
 											<span class="fa fa-heart" aria-hidden="true"></span>
 										</a>73
 									</li>
-								</ul>
+									</ul> -->
 								<div class="clearfix"></div>
 								<a href="#" data-toggle="modal" data-target="#myModal">
-									<h5>20 feb:</h5>
+
 									<h4>How will our website project be managed?</h4>
 								</a>
 								<p>A well-performing website should go through a six step process: Research,
@@ -1024,7 +1065,8 @@
 		<h3 class="pos-title">get in touch</h3>
 		<h4 class="sec-title">nice to meet you!</h4>
 		<div class="contact-right-w3l">
-			<h3 class="title-contact text-center">Have a question or just want to Get in Touch?</h3>
+			<h3 class="title-contact text-center">Have a question or just want to
+				Get in Touch?</h3>
 			<form id="submit-form" action="#" method="post">
 				<div class="contact-input">
 					<input type="text" class="name" name="name" placeholder="First Name" required="">
@@ -1083,9 +1125,11 @@
 		<div class="subscribe-head">
 
 			<h6>Solutions For Your Business.</h6>
-			<h5>The efficient exploitation of originalities is vital to a solution being able to improve its
+			<h5>The efficient exploitation of originalities is vital to a solution
+				being able to improve its
 				procedures,
-				bring brand-new as well as enhanced services and products to market, improve its efficiency as well
+				bring brand-new as well as enhanced services and products to market,
+				improve its efficiency as well
 				as
 				additionally, most notably, enhance its performance..</h5>
 			<!-- <p class="sub-p">Never miss out on latest sales and best offers!</p> -->
@@ -1132,7 +1176,8 @@
 			<p>Email : Techznicindia@gmail.com
 
 			</p> <br>
-			<p>© 2020-2021 Techznicindia. All rights reserved | Designed and developed by
+			<p>© 2020-2021 Techznicindia. All rights reserved | Designed and
+				developed by
 				<a href=""> Techznicindia.</a>
 			</p> <br>
 
@@ -1163,14 +1208,18 @@
 				<div class="modal-body">
 					<div class="model-info">
 						<img src="images/bg2.jpg" alt="" />
-						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus
+						<p>Duis venenatis, turpis eu bibendum porttitor, sapien quam
+							ultricies tellus, ac rhoncus
 							risus
 							odio eget nunc. Pellentesque
-							ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque
+							ac fermentum diam. Integer eu facilisis nunc, a iaculis
+							felis. Pellentesque pellentesque
 							tempor enim, in dapibus turpis
-							porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices
+							porttitor quis. Suspendisse ultrices hendrerit massa.
+							Nam id metus id tellus ultrices
 							ullamcorper. Cras tempor massa
-							luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin
+							luctus, varius lacus sit amet, blandit lorem. Duis
+							auctor in tortor sed tristique. Proin
 							sed
 							finibus sem.</p>
 					</div>
